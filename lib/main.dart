@@ -39,7 +39,10 @@ class MyHome extends StatelessWidget {
           
         ],
       ),
-      body: Center( child: Row(
+      body: SingleChildScrollView( 
+         scrollDirection: Axis.horizontal, 
+        child: Center( 
+        child: Row(
           mainAxisAlignment: MainAxisAlignment.center, // Tengah secara horizontal
           crossAxisAlignment: CrossAxisAlignment.center, // Tengah secara vertikal
                     children: [
@@ -80,8 +83,21 @@ class MyHome extends StatelessWidget {
                         child: Align( alignment: AlignmentGeometry.bottomLeft,
                         child:Text("kontener 3",style: TextStyle(color: Colors.white)),)
                         
+                      ),Container(
+                        width: 100,
+                        height: 100,
+                        alignment: Alignment.center,
+                        margin: EdgeInsets.all(10),
+                        padding: EdgeInsets.all(10),
+                        decoration: BoxDecoration(
+                          color: const Color.fromARGB(255, 66, 1, 243),
+                          borderRadius: BorderRadius.circular(15),
+                        ),
+                        child: Text("kontener 2",style: TextStyle(color: Colors.white)),
                       ),
+                      
                     ],
+                  ),
                   ),
                   ),
     );
