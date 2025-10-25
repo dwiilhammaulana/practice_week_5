@@ -39,6 +39,22 @@ class MyHome extends StatelessWidget {
           
         ],
       ),
+      body: Column(
+                    children: [
+                      Container(
+                        // width: Center(),
+                        // height: Center(),
+                        alignment: Alignment.center,
+                        margin: EdgeInsets.all(10),
+                        padding: EdgeInsets.all(10),
+                        decoration: BoxDecoration(
+                          color: const Color.fromARGB(255, 22, 243, 1),
+                          borderRadius: BorderRadius.circular(50),
+                        ),
+                        child: Text("kontener 1"),
+                      ),
+                    ],
+                  ),
     );
   }
 }
