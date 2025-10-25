@@ -65,7 +65,21 @@ class MyHome extends StatelessWidget {
                           color: const Color.fromARGB(255, 66, 1, 243),
                           borderRadius: BorderRadius.circular(15),
                         ),
-                        child: Text("kontener 1",style: TextStyle(color: Colors.white)),
+                        child: Text("kontener 2",style: TextStyle(color: Colors.white)),
+                      ),
+                      Container(
+                        width: 200,
+                        height: 200,
+                        alignment: Alignment.center,
+                        margin: EdgeInsets.all(10),
+                        padding: EdgeInsets.all(10),
+                        decoration: BoxDecoration(
+                          color: const Color.fromARGB(255, 255, 0, 0),
+                          borderRadius: BorderRadius.circular(0),
+                        ),
+                        child: Align( alignment: AlignmentGeometry.bottomLeft,
+                        child:Text("kontener 3",style: TextStyle(color: Colors.white)),)
+                        
                       ),
                     ],
                   ),
