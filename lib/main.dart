@@ -88,12 +88,24 @@ class MyHome extends StatelessWidget {
                         height: 100,
                         alignment: Alignment.center,
                         margin: EdgeInsets.all(10),
-                        padding: EdgeInsets.all(10),
+                        padding: EdgeInsetsDirectional.only(start: 20, top: 10),
                         decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 66, 1, 243),
+                          color: const Color.fromARGB(255, 255, 0, 234),
                           borderRadius: BorderRadius.circular(15),
                         ),
-                        child: Text("kontener 2",style: TextStyle(color: Colors.white)),
+                        child: Text("اسمي إلهام",style: TextStyle(color: Colors.white)),
+                      ),
+                      Container(
+                        width: 100,
+                        height: 100,
+                        alignment: Alignment.center,
+                        margin: EdgeInsets.all(10),
+                        padding: EdgeInsetsDirectional.only(start: 20, top: 10),
+                        decoration: BoxDecoration(
+                          color: const Color.fromARGB(255, 211, 197, 7),
+                          borderRadius: BorderRadius.circular(15),
+                        ),
+                        child: Text("اسمي إلهام",style: TextStyle(color: const Color.fromARGB(255, 0, 0, 0))),
                       ),
                       
                     ],
