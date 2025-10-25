@@ -39,7 +39,9 @@ class MyHome extends StatelessWidget {
           
         ],
       ),
-      body: Row(
+      body: Center( child: Row(
+          mainAxisAlignment: MainAxisAlignment.center, // Tengah secara horizontal
+          crossAxisAlignment: CrossAxisAlignment.center, // Tengah secara vertikal
                     children: [
                       Container(
                         width: 100,
@@ -61,11 +63,12 @@ class MyHome extends StatelessWidget {
                         padding: EdgeInsets.all(10),
                         decoration: BoxDecoration(
                           color: const Color.fromARGB(255, 66, 1, 243),
-                          borderRadius: BorderRadius.circular(50),
+                          borderRadius: BorderRadius.circular(15),
                         ),
                         child: Text("kontener 1",style: TextStyle(color: Colors.white)),
                       ),
                     ],
+                  ),
                   ),
     );
   }
