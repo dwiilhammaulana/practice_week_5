@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      locale: const Locale('ar'),
+      locale: const Locale('en'),
       supportedLocales: const [
         Locale('en'),
         Locale('ar'),
@@ -49,12 +49,15 @@ class MyHome extends StatelessWidget {
         ],
       ),
       body: SingleChildScrollView(
-        scrollDirection: Axis.horizontal,
+        scrollDirection: Axis.horizontal, 
+        child: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
         child: Center(
-          child: Row(
+          child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              Row( children: [
               Container(
                 width: 100,
                 height: 100,
@@ -80,6 +83,22 @@ class MyHome extends StatelessWidget {
                 child: const Text("kontener 2",
                     style: TextStyle(color: Colors.white)),
               ),
+              Container(
+                width: 100,
+                height: 100,
+                alignment: Alignment.center,
+                margin: const EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  color: const Color.fromARGB(255, 90, 0, 173),
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: const Text("kontener 2",
+                    style: TextStyle(color: Colors.white)),
+              ),
+            ],
+              ),
+
               Container(
                 width: 200,
                 height: 200,
@@ -151,6 +170,7 @@ class MyHome extends StatelessWidget {
                 ),
               ),
             ],
+          ),
           ),
         ),
       ),
