@@ -88,14 +88,29 @@ class MyHome extends StatelessWidget {
                 height: 100,
                 alignment: Alignment.center,
                 margin: const EdgeInsets.all(10),
-                padding: const EdgeInsets.all(10),
+                padding: const EdgeInsets.only(left: 10, top: 5, right: 10, bottom: 5),
                 decoration: BoxDecoration(
                   color: const Color.fromARGB(255, 90, 0, 173),
                   borderRadius: BorderRadius.circular(15),
                 ),
-                child: const Text("kontener 2",
+                child: const Text("padded text",
                     style: TextStyle(color: Colors.white)),
               ),
+              Container(
+                alignment: Alignment.center,
+                margin: const EdgeInsets.all(10),
+                padding: const EdgeInsets.only(left: 10, top: 5, right: 10, bottom: 5),
+                decoration: BoxDecoration(
+                  color: const Color.fromARGB(255, 0, 217, 255),
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: Container(
+                  color: Colors.amber,
+                  child: const Text("padded text",
+                    style: TextStyle(color: Colors.white)),
+              ),
+                )
+                
             ],
               ),
 
