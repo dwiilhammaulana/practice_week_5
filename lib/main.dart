@@ -131,6 +131,26 @@ class MyHome extends StatelessWidget {
                 decoration: BoxDecoration(
                   // color: const Color.fromARGB(255, 255, 0, 0),
                   borderRadius: BorderRadius.circular(0),
+                    image: DecorationImage(
+                  image: AssetImage("assets/images/mu.png"),
+                  fit: BoxFit.cover,
+),
+                ),
+                child: const Align(
+                  alignment: Alignment.bottomLeft,
+                  child: Text("kontener 3",
+                      style: TextStyle(color: Colors.white)),
+                ),
+              ),
+              Container(
+                width: 200,
+                height: 200,
+                alignment: Alignment.center,
+                margin: const EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  // color: const Color.fromARGB(255, 255, 0, 0),
+                  borderRadius: BorderRadius.circular(0),
                     color: const Color.fromARGB(255, 91, 91, 214),
                 ),
                 child: const Align(
@@ -153,19 +173,6 @@ class MyHome extends StatelessWidget {
                 child: const Text("اسمي إلهام",
                     style: TextStyle(color: Colors.white)),
               ),
-               Container(
-  width: 200,
-  height: 200,
-  foregroundDecoration: BoxDecoration(
-    border: Border.all(color: Colors.red, width: 4),
-  ),
-  child: Image.asset(
-    '/assets/images/mu.png',
-    fit: BoxFit.cover,
-  ),
-),
-
-
               Container(
                 width: 100,
                 height: 100,
