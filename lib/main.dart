@@ -132,7 +132,7 @@ class MyHome extends StatelessWidget {
                   // color: const Color.fromARGB(255, 255, 0, 0),
                   borderRadius: BorderRadius.circular(0),
                     image: DecorationImage(
-                  image: AssetImage("assets/images/mu.png"),
+                  image: AssetImage("assets/images/tes.png"),
                   fit: BoxFit.cover,
 ),
                 ),
@@ -143,22 +143,49 @@ class MyHome extends StatelessWidget {
                 ),
               ),
               Container(
-                width: 200,
-                height: 200,
-                alignment: Alignment.center,
-                margin: const EdgeInsets.all(10),
-                padding: const EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  // color: const Color.fromARGB(255, 255, 0, 0),
-                  borderRadius: BorderRadius.circular(0),
-                    color: const Color.fromARGB(255, 91, 91, 214),
-                ),
-                child: const Align(
-                  alignment: Alignment.bottomLeft,
-                  child: Text("kontener 3",
-                      style: TextStyle(color: Colors.white)),
+  width: 200,
+  height: 200,
+  alignment: Alignment.center,
+  margin: const EdgeInsets.all(10),
+  padding: const EdgeInsets.all(10),
+  decoration: BoxDecoration(
+    borderRadius: BorderRadius.circular(25),
+    border: Border.all(
+      color: Colors.black,
+      width: 3,
+    ),
+  ),
+  child: Padding(
+    padding: const EdgeInsets.all(10), // jarak dari border ke gambar
+    child: ClipRRect(
+      borderRadius: BorderRadius.circular(15), // biar ikut melengkung
+      child: Stack(
+        fit: StackFit.expand,
+        children: [
+          Image.asset(
+            "assets/images/mu.png",
+            fit: BoxFit.cover,
+          ),
+          const Align(
+            alignment: Alignment.bottomLeft,
+            child: Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Text(
+                "kontener 3",
+                style: TextStyle(
+                  color: Color.fromARGB(255, 0, 0, 0),
+                  fontWeight: FontWeight.bold,
+                  // backgroundColor: Colors.black54,
                 ),
               ),
+            ),
+          ),
+        ],
+      ),
+    ),
+  ),
+),
+
               Container(
                 width: 100,
                 height: 100,
@@ -183,6 +210,10 @@ class MyHome extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: const Color.fromARGB(255, 255, 238, 0),
                   borderRadius: BorderRadius.circular(15),
+                      border: Border.all(
+      color: Colors.black,  // warna border
+      width: 3,
+                      ),
                 ),
                 child: const Text("اسمي إلهام",
                     style: TextStyle(
